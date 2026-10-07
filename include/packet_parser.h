@@ -4,6 +4,7 @@
 #include <stdint.h>
 #include <stddef.h>
 #include <stdbool.h>
+#include <string.h>
 
 // Packet format configuration 
 #define PACKET_MAGIC1 0xAA
@@ -19,7 +20,7 @@ typedef enum{
     STATE_WAIT_LEN_H,
     STATE_WAIT_LEN_L,
     STATE_WAIT_LEN_PAYLOAD,
-    STATE_WAIT_LEN_CRC
+    STATE_WAIT_CRC
 }parser_state_t;
 
 // Structure to provide once parsing is complete
