@@ -2,7 +2,7 @@
 #include <assert.h>
 #include <string.h>
 
-#include "../include/packet_praser.h"
+#include "../include/packet_parser.h"
 
 // Call back handler
 void test_callback(const parsed_packet_t *packet, void *user_context){

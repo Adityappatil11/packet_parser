@@ -27,7 +27,7 @@ typedef enum{
 typedef struct{
     uint8_t version;
     uint8_t type;
-    uint8_t length;
+    uint16_t length;
     uint8_t payload[PACKET_MAX_PAYLOAD];
     uint8_t crc;
 }parsed_packet_t;
